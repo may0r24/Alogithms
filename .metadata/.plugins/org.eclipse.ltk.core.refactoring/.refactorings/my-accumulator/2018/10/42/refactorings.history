@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;accumulator&apos; to &apos;accumulator.main&apos;&#x0D;&#x0A;- Original project: &apos;my-accumulator&apos;&#x0D;&#x0A;- Original element: &apos;my-accumulator/src/main/java/accumulator&apos;&#x0D;&#x0A;- Renamed element: &apos;my-accumulator/src/main/java/accumulator.main&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;accumulator&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;accumulator" name="accumulator.main" qualified="false" references="true" stamp="1539787502987" textual="false" version="1.0"/>
+</session>

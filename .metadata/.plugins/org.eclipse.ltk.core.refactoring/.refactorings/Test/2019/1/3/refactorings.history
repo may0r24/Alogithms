@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;secondonecount&apos; in &apos;test.Test5.is121Array(...)&apos; to &apos;sCount&apos;&#x0A;- Original project: &apos;Test&apos;&#x0A;- Original element: &apos;test.Test5.is121Array(int[]).secondonecount&apos;&#x0A;- Renamed element: &apos;secondonecount&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;secondonecount&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;test{Test5.java[Test5~is121Array~\[I@secondonecount!217!265!233!246!I!0!false" name="sCount" references="true" stamp="1547337609200" version="1.0"/>
+</session>

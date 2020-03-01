@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;samplepackage.webcalc.SimpleCalculator&apos; to &apos;SimpleCalculatorController&apos;&#x0D;&#x0A;- Original project: &apos;sample-webapp&apos;&#x0D;&#x0A;- Original element: &apos;samplepackage.webcalc.SimpleCalculator&apos;&#x0D;&#x0A;- Renamed element: &apos;samplepackage.webcalc.SimpleCalculatorController&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SimpleCalculator&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;samplepackage.webcalc{SimpleCalculator.java[SimpleCalculator" matchStrategy="1" name="SimpleCalculatorController" qualified="false" references="true" similarDeclarations="true" stamp="1539794200665" textual="false" version="1.0"/>
+</session>

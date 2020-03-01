@@ -1,0 +1,60 @@
+package com.data.main.tasks;
+
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+
+import com.data.main.employeesdata.Employee;
+
+@Entity
+public class Task {
+	
+	private String id;
+	private String name;
+	private String desc;
+	@ManyToOne
+	private Employee employee;
+	
+	public Task() {
+		
+	}
+
+	public Task(String id, String name, String desc, String employee) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.desc = desc;
+		this.employee = new Employee(employee, "", "", "", "");
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDesc() {
+		return desc;
+	}
+
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
+
+	public Employee getEmployee() {
+		return employee;
+	}
+
+	public void setEmployee(Employee employee) {
+		this.employee = employee;
+	}
+}

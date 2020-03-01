@@ -1,0 +1,12 @@
+package com.data.main.tasks;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface TasksRepository extends CrudRepository<Task, String>{
+	
+	public List<Task> findByEmployeeId(String id);
+	public Task findOneByEmployeeId(String Id);
+
+}

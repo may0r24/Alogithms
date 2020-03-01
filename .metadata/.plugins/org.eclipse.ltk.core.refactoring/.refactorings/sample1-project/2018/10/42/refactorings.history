@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;springpackage.quickmessage&apos; to &apos;springpackage.main.quickmessage&apos;&#x0D;&#x0A;- Original project: &apos;sample1-project&apos;&#x0D;&#x0A;- Original element: &apos;sample1-project/src/main/java/springpackage.quickmessage&apos;&#x0D;&#x0A;- Renamed element: &apos;sample1-project/src/main/java/springpackage.main.quickmessage&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;springpackage.quickmessage&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;springpackage.quickmessage" name="springpackage.main.quickmessage" qualified="false" references="true" stamp="1539812088780" textual="false" version="1.0"/>
+</session>

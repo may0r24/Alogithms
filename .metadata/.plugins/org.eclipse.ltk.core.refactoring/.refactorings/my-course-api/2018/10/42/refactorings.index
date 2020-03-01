@@ -1,0 +1,9 @@
+1539862276458	Rename package 'library.main.booksstatus'
+1539863606441	Delete element
+1539872280568	Copy package
+1539872302486	Rename package 'springpackage.booksstatus'
+1539872315192	Rename package 'springpackage.booksstatus.volumes'
+1539872359165	Rename type 'Books'
+1539872377095	Rename type 'BooksController'
+1539872394778	Rename type 'BooksServices'
+1539872416613	Rename type 'BooksRepository'

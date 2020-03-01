@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ResourceNotFoundException.java&apos; to &apos;com-data-new/src/main/java/com.data.main&apos;&#x0A;- Original project: &apos;jpa-one-to-many-demo&apos;&#x0A;- Destination element: &apos;com-data-new/src/main/java/com.data.main&apos;&#x0A;- Original element: &apos;com.example.jpa.exception.ResourceNotFoundException.java&apos;" description="Copy compilation unit" destination="=com-data-new/src\/main\/java&lt;com.data.main" element1="/src\/main\/java&lt;com.example.jpa.exception{ResourceNotFoundException.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1540654636331" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="sample-webapp"/>
+<aop-project name="com-data"/>
+<aop-project name="course-api"/>
+<aop-project name="sample1-project"/>
+<aop-project name="library-webapplication"/>
+<aop-project name="my-course-api"/>
+<aop-project name="spring-autowire-sample"/>
+</aop-reference-model>

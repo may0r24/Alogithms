@@ -1,0 +1,73 @@
+package com.data.main.employeesdata;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.data.main.ResourceNotFoundException;
+import com.data.main.tasks.Task;
+import com.data.main.tasks.TasksRepository;
+
+
+@Service
+public class EmployeesServices {
+
+	@Autowired
+	private EmployeesRepository employeesRepository;
+	@Autowired
+	private TasksRepository tasksRepository;
+	
+	public List<Employee> showEmployees(Integer departmentId) {
+		List<Employee> employee = new ArrayList<>();
+		employeesRepository.findByDepartmentId(departmentId).forEach(employee::add);
+		return employee;
+	}
+
+	public Employee getEmployee(Integer id) {
+		return employeesRepository.findById(id);
+	}
+
+	public void addEmployee(Employee employee) {
+		employeesRepository.save(employee);
+	}
+
+	public Employee updateEmployee(Employee employeeRequest, Integer departmentId, Integer id) {
+		if(!employeesRepository.exists(departmentId)){
+			throw new ResourceNotFoundException("departmentId" + departmentId + "Not Found");
+		}
+		Employee employee = employeesRepository.findById(id);
+		if(employee == null) {
+			throw new ResourceNotFoundException("employeeId" + id + "Not Found");
+		}
+			employee.setFirstName(employeeRequest.getFirstName());
+			employee.setLastName(employeeRequest.getLastName());
+			employee.setEmail(employeeRequest.getEmail());
+			return employeesRepository.save(employee);
+		}
+        
+
+	public ResponseEntity<?> deleteEmployee(Integer departmentId, Integer id) {
+		if(!employeesRepository.exists(departmentId)) {
+            throw new ResourceNotFoundException("departmentId " + departmentId + " not found");
+        }
+		
+		else if(!employeesRepository.exists(id)) {
+            throw new ResourceNotFoundException("employeeId" + id + "Not Found");
+        }
+		if(tasksRepository.exists(id)) {
+			List<Task> taskWithEmployeeId = tasksRepository.findByEmployeeId(id);
+			int i = taskWithEmployeeId.size();
+			while(i !=0) {
+				tasksRepository.delete(taskWithEmployeeId);
+				i--;
+			}
+		}
+		Employee employee = employeesRepository.findById(id);
+		employeesRepository.delete(employee);
+		return ResponseEntity.ok().build();
+	}
+
+	
+}

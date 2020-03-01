@@ -1,0 +1,37 @@
+package com.data.main.tasks;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class TasksServices {
+	
+	@Autowired
+	TasksRepository tasksRepository;
+	
+	public List<Task> showTasks(String id){
+		List<Task> task = new ArrayList<>();
+		tasksRepository.findByEmployeeId(id).forEach(task::add);
+		return task;
+	}
+
+	public Task getTasks(String id) {
+		return tasksRepository.findOneByEmployeeId(id);
+	}
+
+	public void addTasks(Task task) {
+		tasksRepository.save(task);
+	}
+
+	public void updateTasks(Task task) {
+		tasksRepository.save(task);
+	}
+
+	public void deleteTasks(String id) {
+		tasksRepository.delete(id);
+	}
+
+}
